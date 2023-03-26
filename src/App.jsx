@@ -5,7 +5,17 @@ import Player from "./assets/Components/Player/Player";
 import CharcterGif from "./assets/Components/RandomCharcterGif/CharcterGif";
 import { Box } from "@mui/material";
 function App() {
-  return <DarkMode />;
+  const [fetchedUrl, setFetchedUrl] = useState("");
+  const fetchVideo = (url) => {
+    setFetchedUrl(url);
+  };
+  return (
+    <Box>
+      <DarkMode />;
+      <Player />
+      <CharcterGif />
+    </Box>
+  );
 }
 
 export default App;
