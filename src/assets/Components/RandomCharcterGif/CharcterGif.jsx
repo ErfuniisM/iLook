@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Charcters from "./Charcters.json";
-export const CharcterGif = () => {
+function CharcterGif() {
   const [randomCharcter, setRandomCharcter] = useState({});
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * Charcters.length);
@@ -13,4 +13,5 @@ export const CharcterGif = () => {
       alt="batman"
     />
   );
-};
+}
+export default CharcterGif;

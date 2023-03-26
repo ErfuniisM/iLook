@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import DarkMode from "./assets/Components/DarkMode/DarkMode";
 import LinkField from "./assets/Components/LinkField/LinkField";
 import Player from "./assets/Components/Player/Player";
@@ -11,7 +11,7 @@ function App() {
   };
   return (
     <Box>
-      <DarkMode LinkField={<Link fetchVideo={fetchVideo} />} />;
+      <DarkMode LinkField={<LinkField fetchVideo={fetchVideo} />} />;
       <Player />
       <CharcterGif />
     </Box>
