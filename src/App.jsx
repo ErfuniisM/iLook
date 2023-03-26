@@ -11,7 +11,7 @@ function App() {
   };
   return (
     <Box>
-      <DarkMode />;
+      <DarkMode LinkField={<Link fetchVideo={fetchVideo} />} />;
       <Player />
       <CharcterGif />
     </Box>
