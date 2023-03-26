@@ -10,7 +10,12 @@ function App() {
     setFetchedUrl(url);
   };
   return (
-    <Box>
+    <Box
+      display={"flex"}
+      flexDirection={"column"}
+      gap={"10px"}
+      alignItems={"center"}
+    >
       <DarkMode LinkField={<LinkField fetchVideo={fetchVideo} />} />
       <Player url={fetchedUrl} />
       <CharcterGif />
