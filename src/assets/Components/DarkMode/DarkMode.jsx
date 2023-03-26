@@ -52,7 +52,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-function DarkMode({ LinkInput }) {
+function DarkMode({ LinkField }) {
   const [darkMode, setDarkMode] = useState(false);
   const darkTheme = createTheme({
     palette: {
@@ -68,7 +68,7 @@ function DarkMode({ LinkInput }) {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <MaterialUISwitch sx={{ m: 1 }} onChange={handelDarkMode} />
-      {LinkInput}
+      {LinkField}
     </ThemeProvider>
   );
 }
