@@ -3,7 +3,7 @@ import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Box from "@mui/material/Box";
 
-function Link({ fetchVideo }) {
+function LinkField({ fetchVideo }) {
   const [url, setUrl] = useState("");
   const handleChange = (event) => {
     setUrl(event.target.value);
@@ -44,4 +44,4 @@ function Link({ fetchVideo }) {
     </Box>
   );
 }
-export default Link;
+export default LinkField;
