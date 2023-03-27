@@ -45,6 +45,6 @@ body {
 .plyr--video {
   width: 900px;
 }
-.plyr__video-wrapper {
+.plyr {
   border-radius: 8px;
 }
