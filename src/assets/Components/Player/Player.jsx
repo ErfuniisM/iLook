@@ -4,11 +4,19 @@ import "plyr-react/plyr.css";
 import { Box } from "@mui/system";
 
 const plyrOptions = {
-  fullscreen: {
-    enabled: true,
-    fallback: true,
-    iosNative: true,
-  },
+  controls: [
+    "play",
+    "rewind",
+    "fast-forward",
+    "progress",
+    "current-time",
+    "duration",
+    "mute",
+    "volume",
+    "settings",
+    "airplay",
+    "fullscreen",
+  ],
 };
 
 function Player({ url, provider }) {
