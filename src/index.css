@@ -45,10 +45,6 @@ body {
 .plyr--video {
   width: 900px;
 }
-
-.plyr--video {
-  border-radius: 15px;
-}
-.plyr--video {
-  overflow: visible;
+.plyr__video-wrapper {
+  border-radius: 8px;
 }
