@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import { Button } from "@mui/material";
 import Box from "@mui/material/Box";
+import InputAdornment from "@mui/material/InputAdornment";
+import LinkIcon from "@mui/icons-material/Link";
 
 function LinkField({ fetchVideo }) {
   const [url, setUrl] = useState("");
@@ -37,10 +39,17 @@ function LinkField({ fetchVideo }) {
         id="fullWidth"
         value={url}
         onChange={handleChange}
-      />
-      <Button size="Large" onClick={callback}>
+        InputProps={{
+          endAdornment: (
+            <InputAdornment position="end">
+              {/* <Button size="Large" onClick={callback}>
         PLAY
-      </Button>
+      </Button> */}
+              <LinkIcon sx={{ cursor: "pointer" }} onClick={callback} />
+            </InputAdornment>
+          ),
+        }}
+      />
     </Box>
   );
 }
