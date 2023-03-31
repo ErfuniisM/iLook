@@ -38,7 +38,7 @@ function Player({ url, provider }) {
       <Plyr
         options={plyrOptions}
         source={{
-          poster: "src/assets/Components/Player/Posters/MovieTime.jpg",
+          poster: "Posters/MovieTime.jpg",
           type: "video",
           sources: [
             {
