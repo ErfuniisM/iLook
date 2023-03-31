@@ -1,29 +1,30 @@
+
 [
     {
-        "Charcter": "./public/Movies/Avengersgif.gif"
+        "Charcter": "Movies/Avengersgif.gif"
     },
     {
-        "Charcter": "./public/Movies/HighMoon-1.gif"
+        "Charcter": "Movies/HighMoon-1.gif"
     },
     {
-        "Charcter": "./public/Movies/HighMoon-2.gif"
+        "Charcter": "Movies/HighMoon-2.gif"
     },
     {
-        "Charcter": "./public/Movies/PulpFiction.gif"
+        "Charcter": "Movies/PulpFiction.gif"
     },
     {
-        "Charcter": "./public/Movies/Rambo.gif"
+        "Charcter": "Movies/Rambo.gif"
     },
     {
-        "Charcter": "./public/Movies/Scarface.gif"
+        "Charcter": "Movies/Scarface.gif"
     },
     {
-        "Charcter": "./public/Movies/ShaunoftheDead.gif"
+        "Charcter": "Movies/ShaunoftheDead.gif"
     },
     {
-        "Charcter": "./public/Movies/Unknown-1.gif"
+        "Charcter": "Movies/Unknown-1.gif"
     },
     {
-        "Charcter": "./public/Movies/Unknown-.gif"
+        "Charcter": "Movies/Unknown-.gif"
     }
 ]
