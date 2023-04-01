@@ -6,9 +6,18 @@ import InputAdornment from "@mui/material/InputAdornment";
 import LinkIcon from "@mui/icons-material/Link";
 
 function LinkField({ fetchVideo }) {
+  const [inputValue, setInputValue] = useState("");
+  const [inputError, setInputError] = useState(false);
+
   const [url, setUrl] = useState("");
   const handleChange = (event) => {
     setUrl(event.target.value);
+    // Chaeck Url Link
+    const { value } = event.target;
+    const urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+    const validUrl = urlRegex.test(value);
+    setInputValue(value);
+    setInputError(!validUrl);
   };
 
   function callback() {
@@ -39,12 +48,11 @@ function LinkField({ fetchVideo }) {
         id="fullWidth"
         value={url}
         onChange={handleChange}
+        error={inputError}
+        helperText={inputError ? "inCorrect Link!" : ""}
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
-              {/* <Button size="Large" onClick={callback}>
-        PLAY
-      </Button> */}
               <LinkIcon sx={{ cursor: "pointer" }} onClick={callback} />
             </InputAdornment>
           ),
