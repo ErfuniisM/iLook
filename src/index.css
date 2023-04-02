@@ -48,3 +48,11 @@ body {
 .plyr {
   border-radius: 8px;
 }
+
+.MuiFormHelperText-filled {
+  font-size: 16px !important;
+  letter-spacing: 0.03333em;
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+}
