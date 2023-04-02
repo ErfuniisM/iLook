@@ -5,8 +5,9 @@ import { Box } from "@mui/system";
 
 const plyrOptions = {
   controls: [
-    "play",
+    "restart",
     "rewind",
+    "play",
     "fast-forward",
     "progress",
     "current-time",
