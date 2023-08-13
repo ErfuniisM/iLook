@@ -4,6 +4,7 @@ import LinkField from "./assets/Components/LinkField/LinkField";
 import Player from "./assets/Components/Player/Player";
 import CharcterGif from "./assets/Components/RandomCharcterGif/CharcterGif";
 import { Box } from "@mui/material";
+import GithubLink from "./assets/Components/GithubLink/GithubLink";
 function App() {
   const [fetchedUrl, setFetchedUrl] = useState("");
   const fetchVideo = (url) => {
@@ -19,6 +20,7 @@ function App() {
       <DarkMode LinkField={<LinkField fetchVideo={fetchVideo} />} />
       <Player url={fetchedUrl} />
       <CharcterGif />
+      <GithubLink />
     </Box>
   );
 }
