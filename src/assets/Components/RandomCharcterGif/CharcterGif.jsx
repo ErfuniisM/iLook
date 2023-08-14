@@ -8,7 +8,7 @@ function CharcterGif() {
   }, []);
   return (
     <img
-      style={{ width: "250px" }}
+      style={{ width: "200px" }}
       src={randomCharcter.Charcter}
       alt="batman"
     />
