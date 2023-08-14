@@ -4,7 +4,7 @@ function GithubLink() {
   return (
     <a href="https://github.com/ErfuniisM/iWatch">
       <img
-        style={{ width: "20px" }}
+        style={{ width: "30px" }}
         src="Icons/Github.png"
         alt="Github (iWatch)"
       />
