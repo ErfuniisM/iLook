@@ -1,3 +1,3 @@
 This is a iWatch
 
-CHECK IT NOW => https://iwatchtest.netlify.app/
+CHECK IT NOW => https://ilook.netlify.app
