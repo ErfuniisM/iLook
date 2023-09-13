@@ -44,7 +44,7 @@ function Player({ url, provider }) {
           sources: [
             {
               src: url,
-              type: "video/mkv",
+              type: "video/mp4",
               provider: provider,
             },
           ],
